@@ -2,12 +2,23 @@
 {% block content %}
 
 <h3>Recipe list</h3>
-{% for recipe in recipes %}
-    {{ recipe.recipe_name }}<br>
-    {{ recipe.cuisine_name }}<br>
-    {{ recipe.preperation|join(', ') }}<br>
-    {{ recipe.ingredients|join(', ') }}<br>
-    {{ recipe.time_to_cook }}<br>
+
+
+  <div class="row">
+  {% for recipe in recipes %}
+    <div class="col s12 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ url_for('static', filename='img/curry.jpg') }}">
+          <span class="card-title"><h4 class="orange-text darken-2 text-shadow">{{ recipe.recipe_name }}, {{ recipe.cuisine_name }}</h4></span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>Ingredients: {{ recipe.ingredients|join(', ') }} <br>Preperation: {{ recipe.preperation|join(', ') }}<br>, {{ recipe.cuisine_name }}<br> Time to Cook: {{ recipe.time_to_cook }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endfor %}
 
 {% endblock %}
