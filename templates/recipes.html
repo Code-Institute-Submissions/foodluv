@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodLuv</title>
+</head>
+<body>
+
+{% for recipe in recipes %}
+    {{ recipe.recipe_name }}<br>
+    {{ recipe.cuisine_name }}<br>
+    {{ recipe.preperation }}<br>
+    {{ recipe.ingredients }}<br>
+    {{ recipe.time_to_cook }}<br>
+{% endfor %}
+    
+</body>
+</html>
