@@ -124,6 +124,14 @@ def add_recipe():
     return render_template("add_recipe.html", cuisine=cuisine)
 
 
+@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
+def edit_recipe(recipe_id):
+    recipe = mongo.db.recipe.find_one({"_id": ObjectId(recipe_id)})
+
+    cuisine = mongo.db.cuisine.find().sort("cuisine_name", 1)
+    return render_template("edit_recipe.html", recipe=recipe, cuisine=cuisine)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

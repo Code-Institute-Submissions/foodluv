@@ -1,0 +1,92 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<h3 class="orange-text darken-2 center-align text-shadow">Edit Recipe</h3>
+
+
+    <div class="row">
+	<form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
+		<div class="card-panel">
+            <div class="row">
+                <div class="input-field col s12">
+                <i class="fas fa-folder-open prefix orange-text text-darken-2"></i>
+                    <select id="cuisine_name" name="cuisine_name" class="validate" required>
+                        <option value="" disabled selected>Choose Cuisine</option>
+                        {% for cuisine in cuisine %}
+                            <option value="{{ cuisine.cuisine_name }}">{{ cuisine.cuisine_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="cuisine_name">Cuisine</label>
+                </div>
+            </div>
+			<!---Recipe Name-->
+			<div class="row">
+				<div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix orange-text text-darken-2"></i>
+                    <input id="recipe_name" name="recipe_name" minlength="4" maxlength="50"
+                        type="text" class="validate" required>
+                    <label for="recipe_name">Recipe Name</label>
+                </div>
+			</div>
+             <!----Recipe ingredients-->
+			<div class="row">
+				 <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix orange-text text-darken-2"></i>
+                    <textarea id="ingredients" name="ingredients" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="ingredients">Ingredients</label>
+                </div>
+			</div>
+             <!----Recipe preperation-->
+			<div class="row">
+				 <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix orange-text text-darken-2"></i>
+                    <textarea id="preperation" name="preperation" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="preperation">Recipe preperation</label>
+                </div>
+			</div>
+            <!----Recipe time to cook-->
+			<div class="row">
+				 <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix orange-text text-darken-2"></i>
+                    <textarea id="time_to_cook" name="time_to_cook" minlength="1"
+                        maxlength="15" class="materialize-textarea validate" required></textarea>
+                    <label for="time_to_cook">Time to cook</label>
+                </div>
+			</div>
+            <!----Recipe difficulty-->
+			<div class="row">
+				 <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix orange-text text-darken-2"></i>
+                    <textarea id="difficulty" name="difficulty" minlength="3"
+                        maxlength="20" class="materialize-textarea validate" required></textarea>
+                    <label for="difficulty">Difficulty</label>
+                </div>
+			</div>
+            <div class="row">
+                <div class="file-field input-field">
+                    <div class="btn orange darken-2 white-text">
+                    <span>File</span>
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate"  type="text">
+                        <label for="image"></label>
+                    </div>
+                </div>
+            </div>
+
+			<!---Button---->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button class="btn-large orange darken-1 white-text text-shadow" type="submit">Edit Recipe
+                        <i class="fas fa-edit right"></i>
+                    </button>
+                </div>
+            </div>
+		</div>
+	</form>
+</div>
+
+{% endblock %}
