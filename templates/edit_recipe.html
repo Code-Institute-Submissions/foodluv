@@ -13,7 +13,11 @@
                     <select id="cuisine_name" name="cuisine_name" class="validate" required>
                         <option value="" disabled selected>Choose Cuisine</option>
                         {% for cuisine in cuisine %}
-                            <option value="{{ cuisine.cuisine_name }}">{{ cuisine.cuisine_name }}</option>
+                            {% if cuisine.cuisine_name == recipe.cuisine_name %}
+                                <option value="{{ cuisine.cuisine_name }}" selected>{{ cuisine.cuisine_name }}</option>
+                            {% else %}
+                                <option value="{{ cuisine.cuisine_name }}">{{ cuisine.cuisine_name }}</option>
+                            {% endif %}
                         {% endfor %}
                     </select>
                     <label for="cuisine_name">Cuisine</label>
@@ -24,7 +28,7 @@
 				<div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix orange-text text-darken-2"></i>
                     <input id="recipe_name" name="recipe_name" minlength="4" maxlength="50"
-                        type="text" class="validate" required>
+                    value="{{ recipe.recipe_name }}" type="text" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
                 </div>
 			</div>
