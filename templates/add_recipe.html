@@ -5,7 +5,7 @@
 
 
     <div class="row">
-	<form class="col s12 m6 offset-m3" method="POST" action="">
+	<form class="col s12 m6 offset-m3" method="POST" action="{{ url_for('add_recipe') }}">
 		<div class="card-panel">
             <div class="row">
                 <div class="input-field col s12">
@@ -28,16 +28,63 @@
                     <label for="recipe_name">Recipe Name</label>
                 </div>
 			</div>
-            <!----Recipe description-->
+             <!----Recipe ingredients-->
 			<div class="row">
 				 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix orange-text text-darken-2"></i>
-                    <textarea id="recipe_description" name="recipe_description" minlength="5"
+                    <textarea id="ingredients" name="ingredients" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required></textarea>
-                    <label for="recipe_description">Recipe description</label>
+                    <label for="ingredients">Ingredients</label>
                 </div>
 			</div>
+             <!----Recipe preperation-->
+			<div class="row">
+				 <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix orange-text text-darken-2"></i>
+                    <textarea id="preperation" name="preperation" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="preperation">Recipe preperation</label>
+                </div>
+			</div>
+            <!----Recipe time to cook-->
+			<div class="row">
+				 <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix orange-text text-darken-2"></i>
+                    <textarea id="time_to_cook" name="time_to_cook" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="time_to_cook">Time to cook</label>
+                </div>
+			</div>
+            <!----Recipe difficulty-->
+			<div class="row">
+				 <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix orange-text text-darken-2"></i>
+                    <textarea id="difficulty" name="difficulty" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="difficulty">Difficulty</label>
+                </div>
+			</div>
+            <div class="row">
+                <div class="file-field input-field">
+                    <div class="btn orange darken-2 white-text">
+                    <span>File</span>
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate"  required type="text">
+                        <label for="image"></label>
+                    </div>
+                </div>
+            </div>
+
 			<!---Button---->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button class="btn-large orange darken-1 white-text text-shadow" type="submit">Add Recipe
+                        <i class="fas fa-plus-square right"></i>
+                    </button>
+                </div>
+            </div>
 		</div>
 	</form>
 </div>
