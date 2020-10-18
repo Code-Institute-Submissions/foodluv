@@ -34,10 +34,13 @@
         <p>
           <h6>Ingredients:</h6>{{ recipe.ingredients }}<br><hr><h6>Preperation:</h6> {{ recipe.preperation }}<br><hr><h6>Time to Cook: {{ recipe.time_to_cook }}</h6>
         </p>
+        <!-------edit button-->
+        {% if session.user|lower == recipe.created_by|lower %}
         <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
         <!-------edit icon-->
         <i class="fas fa-edit orange-text right"></i>
         </a>
+        {% endif %}
         <a href="#">
         <!---Like heart-->
         <i class="fas fa-heart orange-text"></i></a>
