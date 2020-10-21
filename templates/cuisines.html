@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="orange-text darken-2 center-align text-shadow">Manage Cuisines</h3>
+
+  <div class="row">
+  {% for cuisine in cuisine %}
+    <div class="col s12 m3">
+      <div class="card orange darken-2 text-shadow center-align">
+        <div class="card-content white-text">
+          <span class="card-title">{{ cuisine.cuisine_name }}</span>
+          <p></p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}
