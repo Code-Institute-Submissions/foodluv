@@ -1,23 +1,30 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
 <h3 class="orange-text darken-2 center-align text-shadow">Manage Cuisines</h3>
 
-  <div class="row">
+<div class="row">
+  <div class="col s12 center-align">
+  <a href="{{ url_for('add_cuisine') }}" class="btn-large orange darken-2 text-shadow">
+  Add Cuisine <i class="fas fa-plus-square right"></i>
+  </a>
+  </div>
+</div>
+
+<div class="row">
   {% for cuisine in cuisine %}
-    <div class="col s12 m3">
-      <div class="card orange darken-2 text-shadow center-align">
-        <div class="card-content white-text">
-          <span class="card-title">{{ cuisine.cuisine_name }}</span>
-          <p></p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
+  <div class="col s12 m3">
+    <div class="card orange darken-2 text-shadow center-align">
+      <div class="card-content white-text">
+        <span class="card-title">{{ cuisine.cuisine_name.capitalize() }}</span>
+        <p></p>
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+        <a href="#">Remove Cuisine</a>
       </div>
     </div>
-    {% endfor %}
   </div>
+  {% endfor %}
+</div>
 
 {% endblock %}
