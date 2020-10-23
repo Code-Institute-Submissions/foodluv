@@ -19,8 +19,8 @@
         <p></p>
       </div>
       <div class="card-action">
-        <a href="#">This is a link</a>
-        <a href="#">Remove Cuisine</a>
+        <a href="{{ url_for('edit_cuisine', cuisine_id=cuisine._id) }}" class="btn orange darken-2">Edit</a>
+        <a href="#" class="btn orange darken-2">Remove Cuisine</a>
       </div>
     </div>
   </div>
