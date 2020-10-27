@@ -3,9 +3,87 @@
 {% block content %}
 
 
-<h1 class="center-align orange-text darken-2">This is the home page</h1>
+<h1 class="center-align orange-text darken-2"></h1>
 
 
+<!----Image slider-------->
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{{ url_for('static', filename='img/home-slider.jpg') }}"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{{ url_for('static', filename='img/home-slider-2.jpg') }}"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{{ url_for('static', filename='img/home-slider-3.jpg') }}"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{{ url_for('static', filename='img/home-slider-5.jpg') }}"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <hr class="midpoint-break">
+
+<!-----Info cards-->
+<div class="container info-cards-home">
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-content">
+          <p>Sign up to be able to add and store your favorite recipes to use at a later time</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Sign up</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-content">
+          <p>Select from a preset list of cuisines and we will automatically asign it an image to reflect the cuisine you choose</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Sign up</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-content">
+          <p>Share with family and friends through whatsapp or encourage them to sign up to add recipes too.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="midpoint-break">
+
+<footer>
+
+
+</footer>
 
 
 {% endblock %}

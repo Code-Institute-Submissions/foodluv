@@ -6,4 +6,13 @@
     line-height: 2;
     color: white;
 }
+.info-cards-home{
+    padding-top: 50px;
+}
 
+.midpoint-break{
+    width: 80%;
+    padding-left: 10%;
+    margin-top: 50px;
+    border-color: #ffa726;
+}
