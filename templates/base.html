@@ -48,6 +48,9 @@
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
+                {% if session.user|lower =="admin"|lower %}
+                    <li><a href="{{ url_for('get_cuisines') }}">Cuisines</a></li>
+                {% endif %}
                 <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
@@ -96,7 +99,9 @@
                 <h5 class="white-text">Links</h5>
                 <ul>
                   <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                  {% if session.user %}
+                  <li><a class="grey-text text-lighten-3" href="#!">Recipes</a></li>
+                  {% endif %}
                   <li><a class="grey-text text-lighten-3" href="#!">Login</a></li>
                   <li><a class="grey-text text-lighten-3" href="#!">Sign Up</a></li>
                 </ul>
