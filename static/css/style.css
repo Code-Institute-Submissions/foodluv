@@ -18,8 +18,15 @@
 }
 .profile-welcome{
     margin-bottom: 200px;
+    min-width: 350px;
 }
 
 .page-footer{
-    margin-top: 200px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    overflow: none;
 }
+
+
+
