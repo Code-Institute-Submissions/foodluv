@@ -9,6 +9,8 @@
 		crossorigin="anonymous" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Radley&family=Satisfy&display=swap" rel="stylesheet">
 	{% block styles %}
 	{% endblock %}
 	<title>FoodLuv</title>
@@ -20,7 +22,7 @@
 		<!----Main navigation-->
 		<nav class="nav-extended text-shadow orange darken-2">
 			<div class="nav-wrapper">
-				<a href="{{ url_for('get_recipes') }}" class="brand-logo">FoodLuv</a>
+				<a href="{{ url_for('home') }}" class="brand-logo">FoodLuv</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="{{ url_for('home') }}">Home</a></li>
@@ -55,7 +57,7 @@
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}">Log In</a></li>
-                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('register') }}">Sign Up</a></li>
             {% endif %}
 		</ul>
 	</header>
@@ -88,22 +90,23 @@
 	{% block scripts %}
 	{% endblock %}
 
+    
     <footer class="page-footer orange darken-2">
           <div class="container ">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class=" white-text">FoodLuv</h5>
+                <h5 class=" white-text brand-logo">FoodLuv</h5>
                 <p class="grey-text text-lighten-4">Recipe planner for personal use</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="{{ url_for('home') }}">Home</a></li>
                   {% if session.user %}
-                  <li><a class="grey-text text-lighten-3" href="#!">Recipes</a></li>
+                  <li><a class="grey-text text-lighten-3" href="{{ url_for('get_recipes') }}">Recipes</a></li>
                   {% endif %}
-                  <li><a class="grey-text text-lighten-3" href="#!">Login</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Sign Up</a></li>
+                  <li><a class="grey-text text-lighten-3" href="{{ url_for('login') }}">Login</a></li>
+                  <li><a class="grey-text text-lighten-3" href="{{ url_for('register') }}">Sign Up</a></li>
                 </ul>
               </div>
             </div>
