@@ -4,6 +4,11 @@
 .brand-logo{
 font-family: 'Satisfy', cursive;
 }
+.social-footer{
+    color: white;
+    font-size: 25px;
+    margin: 3px;
+}
 body{
     font-family: 'comic-sans', sans-serif;
 }
