@@ -14,4 +14,66 @@
     </div>
 </div>
 
+ <div class="row">
+    <div class="col s12 m6 l3 xl3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ url_for('static', filename='img/italian.jpg') }}">
+          <span class="card-title text-shadow">View Recipes</span>
+        </div>
+        <div class="card-content">
+          <p class="center-align orange-text darken-2">View all recipes in our Database.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">View Recipe Page</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4 xl3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ url_for('static', filename='img/greek.jpg') }}">
+          <span class="card-title text-shadow">Add Recipes</span>
+        </div>
+        <div class="card-content">
+          <p class="center-align orange-text darken-2">Add a recipe to our database</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Add a New Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4 xl3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ url_for('static', filename='img/indian.jpg') }}">
+          <span class="card-title text-shadow">Edit Recipes</span>
+        </div>
+        <div class="card-content">
+          <p class="center-align orange-text darken-2">Edit your recipe as it develops.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Edit Your Recipe</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m6 l4 xl3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ url_for('static', filename='img/mexican.jpg') }}">
+          <span class="card-title text-shadow">Delete Recipes</span>
+        </div>
+        <div class="card-content">
+          <p class="center-align orange-text darken-2">Delete recipes you no longer want.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Delete Your Recipe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 {% endblock %}

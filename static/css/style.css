@@ -29,15 +29,16 @@ body{
     border-color: #ffa726;
 }
 .profile-welcome{
-    margin-bottom: 200px;
+    margin-bottom: 85px;
     min-width: 200px;
 }
 
-.page-footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    overflow: none;
+
+.flex-wrapper {
+  display: flex;
+  min-height: 15vh;
+  flex-direction: column;
+  justify-content: space-between
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
