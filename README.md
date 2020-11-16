@@ -1,4 +1,4 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+<img src="http://ami.responsivedesign.is/?url=https%3A%2F%2Fabushell-foodluv.herokuapp.com%2Fhome" style="margin: 0;">
 
 Welcome TheBigBushman,
 
