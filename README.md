@@ -1,8 +1,6 @@
 <img src="http://ami.responsivedesign.is/?url=https%3A%2F%2Fabushell-foodluv.herokuapp.com%2Fhome" style="margin: 0;">
 
-Welcome TheBigBushman,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
 
 ## Gitpod Reminders
 
