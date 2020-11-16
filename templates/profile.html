@@ -25,7 +25,7 @@
           <p class="center-align orange-text darken-2">View all recipes in our Database.</p>
         </div>
         <div class="card-action">
-          <a href="#">View Recipe Page</a>
+          <a href="{{ url_for('get_recipes') }}">View Recipe Page</a>
         </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
           <p class="center-align orange-text darken-2">Add a recipe to our database</p>
         </div>
         <div class="card-action">
-          <a href="#">Add a New Recipe</a>
+          <a href="{{ url_for('add_recipe') }}">Add a New Recipe</a>
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
           <p class="center-align orange-text darken-2">Edit your recipe as it develops.</p>
         </div>
         <div class="card-action">
-          <a href="#">Edit Your Recipe</a>
+          <a href="{{ url_for('get_recipes') }}">Edit Your Recipe</a>
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@
           <p class="center-align orange-text darken-2">Delete recipes you no longer want.</p>
         </div>
         <div class="card-action">
-          <a href="#">Delete Your Recipe</a>
+          <a href="{{ url_for('get_recipes') }}">Delete Your Recipe</a>
         </div>
       </div>
     </div>
