@@ -1,5 +1,14 @@
 ## FoodLuv
 
+## This website was created as part of milestone 3 for the code institute covering off the Data Centric Module
+This site was created using Python as the programming language, Flask as the Python micro-framework & MongoDB Atlas as the Database. It was finally deployed using Heroku.
+
+It is a basic recipe website allowing users to add, view , edit & delete recipes under their own user details. They can view all recipes committed to the database once logged in.
+  
+ > [Live Site](http://abushell-foodluv.herokuapp.com/home)
+  
+  >[Repository](https://github.com/TheBigBushman/foodluv/tree/master)
+
 # Table of Contents
 
 - [UX](#ux)
@@ -11,14 +20,6 @@
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
-
-## This website was created as part of milestone 3 for the code institute covering off the Data Centric Module
-This site was created using Python as the programming language, Flask as the Python micro-framework & MongoDB Atlas as the Database. It was finally deployed using Heroku.
-  
- > [Live Site](http://abushell-foodluv.herokuapp.com/home)
-  
-  >[Repository](https://github.com/TheBigBushman/foodluv/tree/master)
-
 
 
 ## UX
