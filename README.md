@@ -59,12 +59,14 @@ The images sourced for this project came from unsplash.com. The idea was to show
 
 
 
-> I as an owner want to be able to manage food database that will grow overtime with the input from users and expand the site to become an authority site where I can then add options to buyer to purchase suggested cooking tools.
+> As an owner want to be able to manage food database that will grow overtime with the input from users and expand the site to become an authority site where I can then add options to buyer to purchase suggested cooking tools.
 > 
 >**Jane is an avid cooker and likes to experiment with different recipe ideas and wants to be able to keep her idea online so she can refer back to them in a consistent place. |She wants the ability to be able to add her own content, update recipes as they change and remove them if they are not what she wants.**
 >
 > Dave is a student who does not really know much about cooking and is looking for inspiration from others. He wants to be able to sign up to a website and be able to find easy meals to cook that appeal to him. 
-  
+>
+>**As a beginner on the website I want to be able to setup an account and view recipes with the option of adding my own in the future.**
+
 
 
 
