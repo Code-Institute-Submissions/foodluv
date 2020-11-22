@@ -8,17 +8,17 @@
     <div class="card">
       <div class="card-image waves-effect waves-block waves-light">
         {% if recipe.cuisine_name == "indian" %}
-            <img class="activator" src="{{ url_for('static', filename='img/indian.jpg') }}">
+            <img class="activator" src="{{ url_for('static', filename='img/indian.jpg') }}" alt="indian food">
         {% elif recipe.cuisine_name == "thai" %}
-            <img class="activator" src="{{ url_for('static', filename='img/thai.jpg') }}">
+            <img class="activator" src="{{ url_for('static', filename='img/thai.jpg') }}" alt="thai food">
         {% elif recipe.cuisine_name == "greek" %}
-            <img class="activator" src="{{ url_for('static', filename='img/greek.jpg') }}">
+            <img class="activator" src="{{ url_for('static', filename='img/greek.jpg') }}" alt="greek food">
         {% elif recipe.cuisine_name == "italian" %}
-            <img class="activator" src="{{ url_for('static', filename='img/italian.jpg') }}">
+            <img class="activator" src="{{ url_for('static', filename='img/italian.jpg') }}" alt="italian food">
         {% elif recipe.cuisine_name == "mexican" %}
-            <img class="activator" src="{{ url_for('static', filename='img/mexican.jpg') }}">
+            <img class="activator" src="{{ url_for('static', filename='img/mexican.jpg') }}" alt="mexican food">
         {% else %}
-            <img class="activator" src="{{ url_for('static', filename='img/general-2.jpg') }}">
+            <img class="activator" src="{{ url_for('static', filename='img/general-2.jpg') }}" alt="general food">
         {% endif %}
       </div>
       <div class="card-content">
