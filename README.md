@@ -23,7 +23,11 @@ This site was created using Python as the programming language, Flask as the Pyt
 
 ## UX
 ***Overview***
-The website itself was designed heavily off the back of the CI mini project. The purpose was to allow users to sign up to the site and add and refer to recipes. 
+The website itself was designed heavily off the back of the CI mini project. 
+
+Vast amounts of the code used has been reaftored to suit my needs from the CI.
+
+The purpose was to allow users to sign up to the site and add and refer to recipes. 
 
 ***Metrics***
 The data metrics a user can add and/or edit include:
