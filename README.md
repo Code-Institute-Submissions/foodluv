@@ -1,10 +1,5 @@
 ## FoodLuv
 
-
-
-**
-Contents:
-
 # Table of Contents
 
 - [UX](#ux)
@@ -277,7 +272,10 @@ Included social icons that are links but do not lead to anywhere as there are no
 
 >**Pep8 Compliance for Python code validation**
 Checked via Pep8 online [here](http://pep8online.com/checkresult)
-Result: No errors
+
+|Page|Result  |
+|--|--|
+|PEP8 Result| Pass 
  
 
 ------------------------
